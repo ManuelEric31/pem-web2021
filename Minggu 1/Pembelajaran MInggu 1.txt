@@ -1,1 +1,3 @@
-Pada pembelajaran Pemrograman Berbasis Web saya belajar mengenai Git dan Github secara singkat, Membuat akun Github.
+HARI PERTAMA
+Pada hari pertama pembelajaran Pemrograman Berbasis Web saya belajar mengenai Git dan Github secara singkat, Membuat akun Github.
+Dimana pada hari pertama dijelaskan mengenai Front End dan Back end Deverloper, serta memberi refrensi dari roadmap.sh yang dimana berisi panduan mengenai masing pembelajaran pemrograman.
