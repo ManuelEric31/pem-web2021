@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+    <style>
+        th,td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Pembelajaran Minggu 4</h2>
+    <br>
+    <p>Cara membuat form di HTML</p>
+    <p>3. Form Register</p>
+    <form action="formregister.php" method="post">
+        <fieldset>
+            <legend><b>Form Register</b></legend>
+            <table border="1" style="border-collapse: collapse;">
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" id="username" placeholder="Masukkan nama anda"></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td><input type="useraname" name="username" id="username" placeholder="Masukkan useraname"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Masukkan email anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" name="password" id="password" placeholder="Masukkan password"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="laki" name="jenisKelamin" value="Laki Laki">
+                        <label for="laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="agama">Agama</label></td>
+                    <td><select id="agama" name="agama">
+                        <option value="Katholik">Katholik</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Konghucu">Konghucu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Hindu">Hindu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="biografi">Biografi</label></td>
+                    <td><textarea name="biografi" id="biografi" cols="20" rows="0"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="urlweb">URL Web</label></td>
+                    <td><input type="url" name="urlweb" id="urlweb" placeholder="Masukkan URL Web"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date</label></td>
+                    <td><input type="date" name="date" id="date" placeholder="Masukkan Tanggal Lahir"></td>
+                </tr>
+                <tr>
+                    <td><label for="umur">Umur</label></td>
+                    <td><input type="number" min="1" max="90" name="umur" id="umur"></td>
+                </tr>
+                <td><label for="submit">Submit</label></td>
+                <td><input type="submit" value="Simpan"></td>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

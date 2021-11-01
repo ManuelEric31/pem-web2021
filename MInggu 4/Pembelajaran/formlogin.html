@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran Minggu 4</title>
+    <style>
+        th,td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Pemebalajaran Minggu 4</h2>
+    <br>
+    <p>Cara membuat form di HTML</p>
+    <p>1. Form login dengan menginputkan username dan password</p>
+    <form action="formlogin.php" method="post">
+        <fieldset>
+        <legend><b>Login Form</b></legend>
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="text" name="username" id="username" placeholder="Masukkan username anda"></td>
+                
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" placeholder="Masukkan password"></td>
+            </tr>
+            <tr>
+                <td><label for="remember">Remember</label></td>
+                <td><input type="checkbox" name="remember" id="remember">Remember me</td>
+            </tr>
+            <tr>
+                <td><label for="submit">Submit</label></td>
+                <td><input type="submit" name="submit" id="submit"></td>
+            </tr>
+
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>

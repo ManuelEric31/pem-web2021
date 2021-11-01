@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+    <style>
+        th,td {
+            padding: 10px;
+        }
+        body {
+            background-image: url(https://cdn.wallpapersafari.com/53/54/OZYJQF.jpg)
+            
+        } 
+        
+    </style>
+</head>
+<body>
+    <table border="1" style="background-color:wheat; margin-left: auto; margin-right: auto;">
+    <tr>
+        <th style="text-align: center;">FORMULIR PPDB JALUR ZONASI TAHUN 2020</th>
+    </tr>
+    </table>
+    <table style="border-collapse: collapse; width: 100%; ">
+        <form action="form.php" method="post" enctype="multipart/form-data">
+        <tr>
+            <th style="background-color:rosybrown;">Nomor</th>
+            <th style="background-color: rosybrown;">Info Pendaftaran</th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td><label for="nNISN">NISN</label></td>
+            <td><input type="number" id="nNISN" name="nNISN" placeholder="Masukkan NISN"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">2</td>
+            <td><label for="nAsalSekolah">Asal Sekolah</label></td>
+            <td><input type="text" id="nAsalSekolah" name="nAsalSekolah" placeholder="Masukkan nama sekolah"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">3</td>
+            <td><label for="nTahunLulus">Tahun Lulus</label></td>
+            <td>
+                <select name="nTahunLulus" id="nTahunLulus">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+            </td>
+            <td>Berkas Ijazah: <input type="file" value="File Ijazah"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color:rosybrown; text-align: center;"><b>DATA CALON PESERTA</b></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">6</td>
+            <td><label for="nNamaLengkap">Nama Lengkap</label></td>
+            <td><input type="text" id="nNamaLengkap" name="nNamaLengkap" placeholder="Masukkan nama lengkap"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">7</td>
+            <td><label for="nNIK">NIK</label></td>
+            <td><input type="number" id="nNIK" name="nNIK" placeholder="Masukkan digit NIK"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">8</td>
+            <td><label for="nTTL">Tempat / Tanggal Lahir</label></td>
+            <td><input type="text" name="nTempat" id="nTempat" placeholder="Masukkan tempat lahir"></td>
+            <td><input type="date" id="nTTL" name="nTTL"></td>
+            <td><label for="umur">Umur: </label>
+                <input type="number" min="10" max="20"> Tahun
+            </td>
+        </tr>
+        <tr>
+           <td style="text-align: center;">9</td>
+            <td><label for="jenisKelamin">Jenis Kelamin</label></td>
+            <td>
+                <input type="radio" id="laki" name="jenisKelamin" value="Laki Laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">10</td>
+            <td><label for="alamat">Alamat</label></td>
+            <td><textarea name="alamat" id="alamat" cols="20" rows="0"></textarea></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">11</td>
+            <td><label for="desaKel">Desa/Kelurahan</label></td>
+            <td><input type="text" id="desaKel" name="desaKel" placeholder="Masukkan Desa/Kelurahan"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">12</td>
+            <td><label for="kecamatan">Kecamatan</label></td>
+            <td><input type="text" id="kecamatan" name="kecamatan" placeholder="Masukkkan Kecamatan"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">13</td>
+            <td><label for="kabupaten">Kabupaten</label></td>
+            <td><input type="text" id="kabupaten" name="kabupaten" placeholder="Masukkan Kabupaten"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">14</td>
+            <td><label for="provinsi">Provinsi</label></td>
+            <td><input type="text" id="provinsi" name="provinsi" placeholder="Masukkan Provinsi"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">15</td>
+            <td><label for="email">Email aktif</label></td>
+            <td><input type="email" username="email" id="email" placeholder="Masukkan email"></td>
+        </tr>
+        <tr>
+            <th colspan="2" style="text-align: center; background-color: rosybrown;">DATA ORANG TUA</th>
+            <td></td>
+            <td>Berkas KK:
+                <input type="file" name="kartuKeluarga" id="KK">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">16</td>
+            <td>
+                <label for="noKK">Nomor Kartu Keluarga</label>
+            </td>
+            <td><input type="number" name="noKK" id="noKK" placeholder="Masukkan Nomor KK"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">17</td>
+            <td>
+                <label for="ayah">Nama Ayah Kandung</label>
+            </td>
+            <td><input type="text" name="ayah" id="ayah" placeholder="Masukkan nama Ayah"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">18</td>
+            <td><label for="agama">Agama</label></td>
+            <td><select id="agama" name="agama">
+                <option value="Katholik">Katholik</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Islam">Islam</option>
+                <option value="Konghucu">Konghucu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Hindu">Hindu</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">19</td>
+            <td>
+                <label for="pekerjaan">Pekerjaan</label>
+            </td>
+            <td><input type="text" name="pekerjaan" id="pekerjaan" placeholder="Masukkan pekerjaan"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">20</td>
+            <td>
+                <label for="ibu">Nama Ibu Kandung</label>
+            </td>
+            <td><input type="text" name="ibu" id="ibu" placeholder="Masukkan nama Ibu"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">21</td>
+            <td><label for="agama">Agama</label></td>
+            <td><select id="agama" name="agama">
+                <option value="Katholik">Katholik</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Islam">Islam</option>
+                <option value="Konghucu">Konghucu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Hindu">Hindu</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">22</td>
+            <td>
+                <label for="pekerjaanibu">Pekerjaan</label>
+            </td>
+            <td><input type="text" name="pekerjaanibu" id="pekerjaanibu" placeholder="Masukkan pekerjaan"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">23</td>
+            <td><label for="alamat">Alamat Orang Tua</label></td>
+            <td><textarea name="alamat" id="alamat" cols="20" rows="0"></textarea></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">24</td>
+            <td><label for="desaKel">Desa/Kelurahan</label></td>
+            <td><input type="text" id="desaKel" name="desaKel" placeholder="Masukkan Desa/Kelurahan"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">25</td>
+            <td><label for="kecamatan">Kecamatan</label></td>
+            <td><input type="text" id="kecamatan" name="kecamatan" placeholder="Masukkkan Kecamatan"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">26</td>
+            <td><label for="kabupaten">Kabupaten</label></td>
+            <td><input type="text" id="kabupaten" name="kabupaten" placeholder="Masukkan Kabupaten"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">27</td>
+            <td><label for="provinsi">Provinsi</label></td>
+            <td><input type="text" id="provinsi" name="provinsi" placeholder="Masukkan Provinsi"></td>
+        </tr>
+        <td><label for="submit"></label> <input type="submit" username="submit"></td>
+        </form>
+    </table>
+</body>
+</html>

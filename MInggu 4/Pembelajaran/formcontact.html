@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contact</title>
+    <style>
+        th,td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Pembelajaran Minggu 4</h2>
+    <br>
+    <p>Cara membuat form di HTML</p>
+    <p>2. Form contact</p>
+    <form action="formcontact.php" method="post">
+        <fieldset>
+            <legend><b>Form Contact</b></legend>
+            <table border="1" style="border-collapse: collapse;">
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" id="username" placeholder="Masukkan nama anda"></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="subject">Subject</label></td>
+                    <td><input type="text" name="subject" id="subject" placeholder="Masukkan subject"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Masukkan email anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="submit">Submit</label></td>
+                    <td><input type="submit" name="submit" id="submit"></td>
+                </tr>
+        </fieldset>
+    </form>
+    
+    
+</body>
+</html>
