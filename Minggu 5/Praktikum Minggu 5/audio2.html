@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penyempurnaan HTML 2</title>
+</head>
+<body>
+    <h1>Contoh Penyempurnaan audio di Web</h1>
+    <p>Audio ini disertai fitur mute, autoplay</p>
+    <audio controls autoplay="true" muted>
+        <source src="hymneudinus.mp3" type="audio/mpeg" >
+        Browsermu tidak mendukung tag audio
+    </audio>
+    <p>Audio ini disertai fitur mute, autoplay, dan loop</p>
+    <audio controls autoplay="true" muted loop="1">
+        <source src="hymneudinus.mp3" type="audio/mpeg" >
+        Browsermu tidak mendukung tag audio
+    </audio>
+    <!-- Tag dibawah ini digunakan untuk menjadikan audio sebagai background-->
+    <p>Audio ini sebagai backgound</p>
+    <audio hidden autoplay="true" loop="1">
+        <source src="hymneudinus.mp3" type="audio/mp3" >
+        Browsermu tidak mendukung tag audio
+    </audio>
+    
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+* {
+    margin:0; 
+    padding:0;
+}
+
+nav {
+margin:auto;
+text-align: center;
+width: 100%;
+font-family:monospace;
+} 
+
+nav ul {
+background:#37988e;
+padding: 5px;
+list-style:none;
+position:relative;
+display:inline-table;
+width: 100%;
+}
+
+nav ul li{
+float:left;
+}
+
+nav ul li:hover{
+background:darkkhaki;
+}
+
+nav ul li:hover a{
+    color:#000;
+}
+
+nav ul li a{
+    display: block;
+    padding: 40px;
+    color: #fff;
+    
+    
+}
+h1 {
+    font-family: monospace;
+    
+}
