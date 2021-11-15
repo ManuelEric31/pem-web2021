@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+nav {
+margin:auto;
+text-align: center;
+width: 100%;
+font-family:monospace;
+} 
+
+nav ul {
+background:#4d4c48;
+padding: 5px;
+list-style:none;
+position:relative;
+display:inline-table;
+width: 100%;
+}
+
+nav ul li{
+float:left;
+}
+
+nav ul li:hover{
+background:darkkhaki;
+}
+
+nav ul li:hover a{
+    color:#000;
+}
+
+nav ul li a{
+    display: block;
+    padding: 40px;
+    color: #fff;
+    
+}
+header h1 {
+    font-family: monospace;    
+}
+
+h1 {
+    font-family: monospace;
+}
+
+body {
+    background-image: url(https://www.kibrispdr.org/dwn/1/white-polygon-wallpaper.jpg);
+}
+
+.copyright{
+    float:left;
+    padding-top:5px;
+    padding-bottom:5px;
+    font:normal 80% Verdana,Trebuchet,Arial,Sans-serif;
+    }
