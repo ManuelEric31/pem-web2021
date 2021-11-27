@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh penulisan CSS dengan selector universal</title>
+    <style type="text/css">
+        *{
+            border: 1px solid blue;
+            margin: 0;
+            padding: 0;
+        }
+        input[type=text]{
+            background: black;
+            color:aqua;
+            padding: 10px;
+            border: 1px solid red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: medium;
+        }
+        h2{
+            border-radius: 20px;
+            padding: 60px;
+            text-align: center;
+            background-color: blueviolet;
+            border-color:green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Halo saya adalah calon Web Developer Muda</h2>
+    <p>
+    Tuliskan nama anda: 
+        <input type="text" placeholder="Tulis nama disini.."/>     
+    </p>
+    <p>
+        Tuliskan jabatan anda:
+        <input type="text" placeholder="Tulis jabatan disini.."/>
+    </p>
+</body>
+</html>
