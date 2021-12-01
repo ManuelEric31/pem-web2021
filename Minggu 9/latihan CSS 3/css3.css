@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+body{
+    background: #128a84;
+    font-family: monospace;
+    text-align: center;
+    }
+h1{
+    color: #fff;
+    }
+.ketengah{
+    margin: 10px auto;
+    width: 1150px;
+    }
+    /*
+    nilai 20 adalah nilai tinggi rendah nya bayangan
+    nilai 10 adalah nilai untuk mengatur rata kiri kanan bayangan
+    nilai 5 adalah nilai untuk mengatur ketebalan bayangan
+    dan yang terakhir adalah mengatur warna bayangan
+    */
+.tulisan1{
+    text-shadow: 20px 10px 5px #232323;
+    }
+    /*
+    nilai 0 pertama adalah nilai tinggi rendah nya bayangan
+    nilai 0 kedua adalah nilai untuk mengatur rata kiri kanan bayangan
+    nilai 20 adalah nilai untuk mengatur ketebalan bayangan
+    dan yang terakhir adalah mengatur warna bayangan
+    */
+.tulisan2{
+    text-shadow: 20px 3px 5px rgb(255, 251, 2);
+    font-family: 'Praise', cursive;
+}
+    /*
+    nilai 20 yang pertama adalah nilai tinggi rendah nya bayangan
+    nilai 20 kedua adalah nilai untuk rata kiri kanan bayagan
+    nilai 40 adalah nilai radius banyangan
+    nilai 10 adalah nilai ketebalan bayangan
+    dan yang terakhir adalah menentukan warna bayangan
+    */
+.kotak1{
+    background: aquamarine; 
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    float: left;
+    box-shadow: 20px 20px 100px 10px blueviolet;
+    }
+    /*
+    nilai 0 yang pertama adalah nilai tinggi rendah nya bayangan
+    nilai 0 kedua adalah nilai untuk rata kiri kanan bayagan
+    nilai 10 pertama adalah nilai radius banyangan
+    nilai 10 kedua adalah nilai ketebalan bayangan
+    dan yang terakhir adalah menentukan warna bayangan
+    */
+.kotak2{
+    background:darkgoldenrod;
+    width: 300px;
+    margin: 20px;
+    float: right;
+    height: 300px;
+    box-shadow: 0px 0px 10px 10px #333333;
+    }
+    

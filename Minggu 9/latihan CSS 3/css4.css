@@ -1,0 +1,28 @@
+body{
+    background: #7f23bd;
+    font-family: monospace;
+    text-align: center;
+    }
+h1,h2{
+    color: rgb(0, 0, 0);
+    }
+.kotak1{
+    background: #f162c7;
+    padding: 50px;
+    float: left;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    }
+    /*Fungsi translate ini sebagai pemindah posisi suatu objek */
+.kotak2{
+    background: #74d6da;
+    padding: 50px;
+    float: left;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: translate(50px,100px); /* Support IE 9 */
+     -webkit-transform: translate(50px,100px); /* support Safari */
+     transform: translate(250px,150px); /* Standard syntax */
+    }

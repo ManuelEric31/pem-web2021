@@ -1,0 +1,28 @@
+body{
+    background: #f89494;
+    font-family: monospace;
+    text-align: center;
+    }
+h1,h2{
+    color: rgb(28, 107, 255);
+    }
+.kotak1{
+    background: #ffe260;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    }
+    /*Fungsi scale pada bagian untuk berguna untuk memperbesar/ memperkecil objek */
+.kotak2{
+    background: #ff72f8;
+    padding: 20px;
+    float: left;
+    margin: 100px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: scale(2,3); /* Support IE 9 */
+    -webkit-transform: scale(2,3); /* support Safari */
+    transform: scale(2.0,2.0); /* Standard syntax */
+    }

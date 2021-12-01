@@ -1,0 +1,29 @@
+body{
+    background: #d2f08d;
+    font-family: roboto;
+    text-align: center;
+    }
+h1,h2{
+    color: rgb(0, 0, 0);
+    text-shadow: 20px 15px 5px black;
+    }
+.kotak1{
+    background: #52d7f8;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    }
+.kotak2{
+    background: #5e46a1;
+    padding: 20px;
+    float: right;
+    margin: 200px;
+    width: 150px;
+    height: 100px;
+    /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+    -ms-transform: matrix(1,2,-1,1,5,4); /* Support IE 9 */
+    -webkit-transform: matrix(1,2,-1,1,5,4); /* support Safari */
+    transform: matrix(1,2,-1,1,5,); /* Standard syntax */
+}

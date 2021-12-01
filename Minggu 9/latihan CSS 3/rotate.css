@@ -1,0 +1,49 @@
+body{
+    background: #35A9DB;
+    font-family: 'Verdana';
+    text-align: center;
+    }
+h1,h2{
+    color: rgb(101, 69, 189);
+    }
+.kotak1{
+    background: #8efce9;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    }
+.kotak2{
+    background: #7b20e4;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: rotate(45deg); /* Support IE 9 */
+    -webkit-transform: rotate(45deg); /* support Safari */
+    transform: rotate(45deg); /* Standard syntax */
+    }
+.kotak3{
+    background: #d3acf7;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: rotate(70deg); /* Support IE 9 */
+    -webkit-transform: rotate(70deg); /* support Safari */
+    transform: rotate(70deg); /* Standard syntax */
+    }
+.kotak4{
+    background: #fcfcfc;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: rotate(-60deg); /* Support IE 9 */
+    -webkit-transform: rotate(-60deg); /* support Safari */
+    transform: rotate(-60deg); /* Standard syntax */
+    }
