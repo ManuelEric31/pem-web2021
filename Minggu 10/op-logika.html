@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika</title>
+</head>
+<body>
+    <script>
+        var aku = 20;
+        var kamu = 19;
+        var benar = aku > kamu;
+        var salah = aku < kamu;
+        // operator && (and)
+        // operator dan akan menghasilkan nilai true apabila kedua kondisi benar, sisanya akan salah
+        var hasil = benar && salah;
+        document.write(`${benar} && ${salah} = ${hasil}<br/>`);
+        var hasil = benar && benar;
+        document.write(`${benar} && ${benar} = ${hasil}<br/>`);
+        var hasil = salah && salah;
+        document.write(`${salah} && ${salah} = ${hasil}<br/>`);
+        
+        // operator || (or)
+        // operator or akan menghasilkan nilai true apabila salah satu kondisi benar atau keduanya benar
+        var hasil = benar || salah;
+        document.write(`${benar} || ${salah} = ${hasil}<br/>`);
+        
+        // operator ! (not)
+        // operator not berarti kebalikan dari kondisi tersebut
+        var hasil = !benar
+        document.write(`!${benar} = ${hasil}<br/>`);
+
+        // variasi
+        // operator campuran dari &&, ||, ~
+        var hasil = !benar && benar || salah
+        document.write(`!${benar} && ${benar} || ${salah} = ${hasil}`);
+        </script>
+</body>
+</html>

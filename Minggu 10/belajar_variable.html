@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Variable dalam Javascipt</title>
+    <script>
+        // contoh pembuatan variable
+        var nama = "Indomaret";
+        var visitorCount = 1000 ;
+        var isActive = true;
+        var url = "http://dinus.ac.id/";
+        let job1 = "Kasir";
+        let job2 = "Tukang Parkir";
+        var bookTitle = "Belajar Pemrograman Javascript";
+        delete bookTitle;
+        typeof nama;
+        typeof visitorCount;
+        typeof isActive;
+        /* Contoh pengisian ulang variable
+            var age = 18;
+            age = 21;, variable age memiliki value 21 */
+        // var dan let memiliki perbedaan letak cakupan
+        // var memiliki cakupan global
+        // let memiliki cakupan selama masih berada di cakupannya
+
+
+        // menampilkan variable ke jendela dialog (alert)
+        alert ("Selamat datang di " + nama +  ", Selamat Belanja!" )
+        alert ("Silahkan memilih list pesanan anda!");
+
+        // menampilkan variable ke dalam HTML
+        document.write ("<h1 style='background-color:cyan'>Situs Indomaret</h1>")
+        document.write("<p style='color:red'>Nama Situs: " + nama + "</p><br>");
+        document.write("<p style='color:red'>Jumlah Pengunjung: " + visitorCount + "</p><br>");
+        document.write("<p style='color:red'>Status Aktif: " + isActive + "</p><br>");
+        document.write("<p style='color:red'>Alamat URL: " + url + "</p><br>");
+        document.write("<p style='color:red'>List Job 1: " + job1 + "</p><br>");
+        document.write("<p style='color:red'>List Job 2: " + job2 + "</p><br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

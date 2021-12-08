@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Bitwise</title>
+</head>
+<body>
+    <script>
+        var x = 4;
+        var y = 3;
+        // operator bitwise and
+        // operasi dikonversi dari desimal menjadi biner lalu membandingkan nilai biner nya
+        var hasil = x & y;
+        document.write(`${x} & ${y} = ${hasil}<br/>`);
+        // operator bitwise or
+        // operasi dikonversi dari desimal menjadi biner lalu membandingkan nilai biner nya
+        var hasil = x | y;
+        document.write(`${x} | ${y} = ${hasil}<br/>`);
+        // operator bitwise xor
+        // operator bitwise xor ini bernilai true apabila pembandingnya bernilai (true,false) atau (false,true)
+        // operator ini dulu dapat diterapkan di teknologi seperti saklar hotel
+        var hasil = x ^ y;
+        document.write(`${x} ^ ${y} = ${hasil}<br/>`);
+        // operator negasi
+        var hasil = ~x;
+        document.write(`~${x} = ${hasil}<br/>`);
+        // operator bitwise right shift >>
+        //  setiap pergeseran ke kanan 1 bit maka nilai akan dibagi 2 dan seterusnya (4,8, dst) 
+        var hasil = x >> y;
+        document.write(`${x} >> ${y} = ${hasil}<br/>`);
+        // operator bitwise left shift <<
+        // setiap pergeseran ke kiri 1 bit maka nilai akan dikali 2 dan seterusnya (4,8, dst)
+        var hasil = x << y;
+        document.write(`${x} << ${y} = ${hasil}<br/>`);
+        // operator bitwise right shift (unsigned) >>>
+        var hasil = x >>> y;
+        document.write(`${x} >>> ${y} = ${hasil}<br/>`);
+    </script>
+</body>
+</html>
