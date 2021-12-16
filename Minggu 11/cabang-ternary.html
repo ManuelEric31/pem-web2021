@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Ternary</title>
+</head>
+<body>
+    <script>
+        var jawab = prompt ("Apakah Jakarta ibu kota Indonesia? Iya / Tidak");
+        var jawab1 = prompt ("Apakah Semarang ibu kota Jawa Tengah? Iya / Tidak");
+
+        var jawaban = (jawab.toUpperCase()  == "IYA") ? "Benar" : "Salah";
+        var jawaban1 = (jawab1.toUpperCase()  == "IYA") ? "Benar" : "Salah";
+        
+        document.write (`Jawaban anda nomor 1 <b>${jawaban} </b> <br>`);
+        document.write (`Jawaban anda nomor 2 <b>${jawaban1} </b> <br>`);
+
+        if (jawaban1 == "Benar" && jawaban == "Benar") {
+            document.write (`Selamat Nilai Anda 100!`);
+        }
+        else if (jawaban1 == "Benar" && jawaban == "Salah") {
+            document.write (`Nilai anda 50!`);
+        }
+        else if (jawaban1 == "Salah" && jawaban == "Benar") {
+            document.write (`Nilai anda 50!`);
+        }
+        else {
+            document.write (`Nilai anda 0!`);
+        }
+    </script>
+</body>
+</html>
