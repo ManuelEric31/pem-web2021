@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API Javascript</title>
+</head>
+<body>
+    <script>
+        var judul = document.createElement("h1");
+        var judul2 = document.createElement("h2");
+        var isi = document.createElement("p");
+        var spasi = document.createElement("br");
+        // mengisi kontent elemen
+        judul.textContent = "Belajar DOM Javascript";
+        judul2.textContent = "Oleh : The, Manuel Eric Saputra";
+        isi.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus ratione pariatur soluta dicta quo ducimus nostrum voluptates, impedit nam iusto quibusdam. Ipsa alias totam recusandae ex consequuntur! Inventore, voluptates!"
+        spasi.textContent = "<br>"
+
+        // menambahkan elemen ke dalam tag body
+        document.body.append(judul);
+        document.body.append(judul2);
+        document.body.append(spasi);
+        document.body.append(isi);
+    </script>
+</body>
+</html>

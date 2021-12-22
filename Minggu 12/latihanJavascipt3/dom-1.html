@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memilih Element Berdasarkan ID</title>
+</head>
+<body>
+    <!-- Elemen div yang akan dipilih dari JS -->
+    <!-- ELemen id disini disebut dengan identititas atau kekhas an nya masing masing -->
+    <div id="tutorial"></div>
+    <div id="tutorial2"></div>
+    <div id="tutorial3"></div>
+
+    <script>
+        var tutorial = document.getElementById("tutorial");
+        var tutorial2 = document.getElementById("tutorial2");
+        var tutorial3 = document.getElementById("tutorial3");
+
+        // mengisi teks kedalam elemen (div 1)
+        tutorial.innerHTML = "Tutorial Javascript 1";
+
+        // memberikan CSS kedalam element
+        tutorial.style.backgroundColor = "gold";
+        tutorial.style.padding = "10px";
+        tutorial.style.border = "2px solid blue";
+
+
+        // mengisi teks kedalam elemen (div 2)
+        tutorial2.innerHTML = "Tutorial Javascript 2";
+
+        // memberikan CSS kedalam element
+        tutorial2.style.backgroundColor = "lavender";
+        tutorial2.style.padding = "20px";
+        tutorial2.style.margin = "10px";
+        tutorial2.style.fontFamily = "monospace";
+        tutorial2.style.border = "2px solid black";
+        tutorial2.style.textAlign = "center";
+
+        // mengisi teks kedalam elemen (div 3)
+        tutorial3.innerHTML = "Tutorial Javascript 3";
+
+        // memberikan CSS kedalam element
+        tutorial3.style.backgroundColor = "magenta";
+        tutorial3.style.padding = "30px";
+        tutorial3.style.margin = "20px";
+        tutorial3.style.fontFamily = "sans-serif";
+        tutorial3.style.border = "2px solid blue";
+        tutorial3.style.textAlign = "right";
+    </script>
+
+</body>
+</html>

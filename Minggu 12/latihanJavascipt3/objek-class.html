@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Objek Javascript</title>
+</head>
+<script>
+    function Person (firstName, lastName){
+        // properties
+        this.firstName = firstName;
+        this.lastName = lastName;
+
+        // methods
+        this.fullName = function(){
+            return `${this.firstName} ${this.lastName}`
+        }
+        this.showName = function(){
+            document.write(this.fullName());
+        }
+    }
+    function gajiJabatan (gaji, jabatan) {
+        // properties
+        this.gaji = gaji;
+        this.jabatan = jabatan;
+        // method
+        this.overAll = function (){
+            return `Gaji anda: Rp.${this.gaji} dan Jabatan Anda : ${this.jabatan}`
+        }
+
+        this.showGajiJabatan = function(){
+            document.write(this.overAll());
+        }
+    }
+    var person1 = new Person ("Agus", "Santoso");    
+    var gaji1 = new gajiJabatan ("3000000", "Supervisor");    
+    var person2 = new Person ("Heru", "Agus"); 
+    var gaji2 = new gajiJabatan ("7000000", "Manager");   
+
+    person1.showName();
+    document.write("<br>");
+    gaji1.showGajiJabatan();
+    document.write("<br>");
+    document.write("<br>");
+    person2.showName();
+    document.write("<br>");
+    gaji2.showGajiJabatan();
+</script>
+<body>
+    
+</body>
+</html>

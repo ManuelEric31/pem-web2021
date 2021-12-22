@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API Javascript</title>
+    <style>
+        body {
+            background-color:black
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsum perferendis quis? Exercitationem unde voluptatibus, illum quam nihil eligendi velit? Eveniet explicabo dolorum quam aperiam. Ipsam nesciunt fuga dolores harum.'</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus ratione pariatur soluta dicta quo ducimus nostrum voluptates, impedit nam iusto quibusdam. Ipsa alias totam recusandae ex consequuntur! Inventore, voluptates!</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus veritatis, quae qui unde et ipsa, quos quo voluptas, quia dolor iure voluptate. Tenetur laudantium deleniti ab recusandae? Itaque, architecto!</p>
+
+    <script>
+        var paragraf = document.getElementsByClassName ("paragraf");
+        console.log (paragraf);
+        // Variabel paragraf akan berisi sebuah array yang di dalamnya terdapat tiga buah objek DOM dari paragraf
+
+        // paragraf 1
+        paragraf[0].style.color = "lightblue";
+        paragraf[0].style.background = "seashell";
+        paragraf[0].style.padding = "20px";
+        paragraf[0].style.border = "3px solid blue";
+        //paragraf 2
+        paragraf[1].style.color = "lavender";
+        paragraf[1].style.background = "purple";
+        paragraf[1].style.padding = "30px";
+        // paragraf 3
+        paragraf[2].style.color = "aqua";
+        paragraf[2].style.background = "grey";
+        paragraf[2].style.padding = "40px";
+    </script>
+</body>
+</html>

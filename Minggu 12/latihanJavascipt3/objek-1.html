@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Objek Javascript</title>
+</head>
+<body>
+    <script>
+        var person = {
+            firstName: "Manuel",
+            lastName: "Eric",
+            showName: function () {
+                alert (`Nama : ${this.firstName} ${this.lastName}`);
+            }
+        };
+
+        var bio = {
+            age: 36,
+            status : "Mahasiswa",
+            jurusan : "Teknik Informatika",
+            showBio: function () {
+                alert(`Umur : ${this.age}, Status : ${this.status}, Jurusan : ${this.jurusan}`);
+            }
+        };
+        person.showName();
+        bio.showBio();
+    </script>
+</body>
+</html>

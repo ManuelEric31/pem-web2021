@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API Javascript Ubah Warna</title>
+</head>
+<body>
+    <h1>Aplikasi Ubah Warna</h1>
+    <label>Warna latar: </label>
+    <input type="color" id="bg-color" />
+    <br>
+    <label>Warna teks: </label>
+    <input type="color" id="text-color" />
+    <label>Waktu : </label>
+    <input type="time" id="time">
+
+    <script>
+        var bgColor = document.getElementById('bg-color');
+        var txtColor = document.getElementById('text-color');
+        var time = document.getElementById('time');
+
+        bgColor.addEventListener("change", (event) => {
+        document.body.style.backgroundColor = bgColor.value;
+        });
+        txtColor.addEventListener("change", (event) => {
+        document.body.style.color = txtColor.value;
+        });
+
+        time.addEventListener("change", (event) => {
+            document.body.style.time = time.value;
+        });
+    </script>
+</body>
+</html>
