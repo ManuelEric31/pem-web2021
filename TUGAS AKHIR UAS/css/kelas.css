@@ -27,6 +27,9 @@ body {
     align-items: center;
     justify-content: center;
     display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg1.png');
+    background-size: cover;
     
 }
 
@@ -111,10 +114,7 @@ nav a:hover {
     color: rgba(0, 0, 0, 0.952);
     min-height: 160px;
     align-items: center;
-    background-size: cover;
     display: flex;
-    background-repeat: no-repeat;
-    background-image: url('../images/bg1.png');
     padding-top: 50px;
 }
 
