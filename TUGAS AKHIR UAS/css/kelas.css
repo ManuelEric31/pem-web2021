@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+#btnTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffae00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: rgb(0, 0, 0);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Stoke';
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    
+}
+
+.header,
+.header-2 {
+    display: flex;
+    padding: 10px;
+    background-color: #000000;
+}
+
+.header-2 {
+    flex-direction: row-reverse;
+}
+.fixed-header {
+    z-index: 999;
+    position: absolute;
+    height: auto;
+    background-color: #fff;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 3px 8px #888888
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: start;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    padding: 0px 5px;
+}
+
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+#logoprofil img{
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 50vw
+}
+
+#logohead {
+    margin-top: 18px;
+    margin-left: 10px
+}
+
+#logoprofil a {
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5b5c5e;
+    padding: 10px;
+    font-size: 1.0em;
+    color: white;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: rgb(255, 195, 66);
+    font-weight: bold;
+    transition: 1s linear;
+
+}
+
+.link {
+    text-align: center;
+}
+
+.link img {
+    width: 50px;
+    padding: 20px;
+}
+
+.home .background {
+    color: rgba(0, 0, 0, 0.952);
+    min-height: 160px;
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg1.png');
+    padding-top: 50px;
+}
+
+/* Kotak Kelas */
+.ketengah {
+    margin: 10px auto;
+    width: 1150px;
+    color: black;
+    margin-top: 100px;
+    font-family: 'Sen';
+}
+
+.kotak {
+    background: #fcfcfc;
+    padding: 20px;
+    width: 200px;
+    float: left;
+    margin: 20px;
+    height: 200px;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.kotak1,
+.kotak2,
+.kotak3,
+.kotak4,
+.kotak5,
+.kotak6,
+.kotak7,
+.kotak8,
+.kotak9,
+.kotak10,
+.kotak11,
+.kotak12 {
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    align-items: center;
+}
+
+.kotak:hover {
+    transform: scale(1.1);
+    background-color: rgb(224, 224, 224);
+}
+
+.ketengah .judul {
+    text-align: center;
+}
+
+.kotak1 img,
+.kotak2 img,
+.kotak3 img,
+.kotak4 img,
+.kotak5 img,
+.kotak6 img,
+.kotak7 img,
+.kotak8 img,
+.kotak9 img,
+.kotak10 img,
+.kotak11 img,
+.kotak12 img {
+    width: 70%;
+    display: flex;
+    margin-top: 20px;
+    transition: all .5s ease;
+
+}
+
+.kotak1 p {
+    text-align: center;
+}
+
+.down,
+.down1,
+.down2,
+.down3,
+.down4,
+.down5,
+.down6,
+.down7,
+.down8,
+.down9,
+.down10,
+.down11 {
+    border-radius: 10px;
+    transition: all .5s ease;
+    text-align: center;
+}
+
+#info1, #info2, #info3, #info4, #info5, #info6, #info7, #info8, #info9, #info10, #info11, #info12 {
+    margin-top: 20px;
+}
+
+/* Footer */
+.bantuan {
+    color: white;
+    margin-left: 40px;
+    font-family: 'Sen';
+}
+
+.sosmed {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.sosmed img {
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.Footer {
+    width: 100%;
+    display: inline-block;
+    background-color: #000000;
+    margin-bottom: -10px;
+}
+
+.isi-footer {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.isi-footer ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    list-style: none;
+}
+
+.isi-footer ul li {
+    margin: 3px 0;
+    float: left;
+    width: 31.94%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.isi-footer ul li ul {
+    padding: 0;
+}
+
+.isi-footer ul li ul li {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    padding: 5px 0;
+    display: inline;
+}
+
+.copyright {
+    color: white;
+    font-family: 'Sen';
+}
+
+.partner {
+    color: white;
+    font-family: 'Sen';
+}
+
+.partner-img img {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+.partner-img {
+    font-size: 15px;
+}

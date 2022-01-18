@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/kelas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    <button id="btnTop" onclick="topFunction()">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <!-- Script Scroll Up Button -->
+    <script>
+        var mybutton = document.getElementById("btnTop");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- Header Section -->
+    <div class="fixed-header">
+        <div class="header">
+            <img id="logohead"src="images/myCodey (1).png" alt="Logo" height="50px" class="logo">
+                <nav>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="kelas.html">Kelas</a></li>
+                    <li><a href="diskusi.html">Diskusi</a></li>
+                    <li><a  href="review.html">Review</a></li>
+                    <li id="logoprofil">
+                        <a href="login.html" style="font-size:12px">
+                            <img src="images/profile.png" alt="">   
+                        </a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    <!-- Section Kelas Dimulai -->
+<section class="home">
+    <div class="background">
+        <div class="ketengah">
+        <div class="judul"><h1>Kelas Terpopuler</h1></div>
+        <div class="kotak kotak1">
+            <center>
+                <img src="images/c.png" alt="" id="gambar1">
+                <p id="info1"><i>Click for more info</i></p>
+            </center>
+            <div class="down">
+            <p>Dasar Pemrograman C++</p>
+            <p style="color: royalblue;">Rp 0</p>
+            <br><br>
+            <hr>
+            <p>Gratis Akses</p>
+            </div>
+        </div>
+
+        <div class="kotak kotak2">
+            <center>
+                <img src="images/java.png" alt="" id="gambar2">
+                <p id="info2"><i>Click for more info</i></p>
+            </center>
+            <div class="down1">
+            <p>Dasar Pemrograman Java</p>
+            <p  style="color: royalblue;">Rp 0</p>
+            <br><br>
+            <hr>
+            <p>Gratis Akses</p>
+            </div>
+        </div>
+        <div class="kotak kotak3">
+            <center>
+                <img src="images/android.png" alt="" id="gambar3">
+                <p id="info3"><i>Click for more info</i></p>
+            </center>
+            <div class="down2">
+            <p>Fullstack Android Developer</p>
+            <p style="color: royalblue;">Rp 300.000</p>
+            <br><br>
+            <hr>
+            <p>Berlangganan</p>
+            </div>
+        </div>
+        <div class="kotak kotak4">
+            <center>
+                <img src="images/javascript.png" alt="" id="gambar4">
+                <p id="info4"><i>Click for more info</i></p>
+            </center>
+            <div class="down3">
+            <p>Fullstack Javascript Developer</p>
+            <p style="color: royalblue;">Rp 600.000</p>
+            <br><br>
+            <hr>
+            <p>Berlangganan</p>
+            </div>
+        </div>
+        <div class="kotak kotak5">
+            <center>
+                <img src="images/swift.png" alt="" id="gambar5">
+                <p id="info5"><i>Click for more info</i></p>
+            </center>
+            <div class="down4">
+            <p>Dasar Pemrograman Swift</p>
+            <p style="color: royalblue;">Rp 0</p>
+            <br><br>
+            <hr>
+            <p>Gratis Akses</p>
+            </div>
+        </div>
+        <div class="kotak kotak6">
+            <center>
+                <img src="images/python.png" alt="" id="gambar6">
+                <p id="info6"><i>Click for more info</i></p>
+            </center>
+            <div class="down5">
+            <p>Dasar Pemrograman Python</p>
+            <p  style="color: royalblue;">Rp 0</p>
+            <br><br>
+            <hr>
+            <p>Gratis Akses</p>
+            </div>
+        </div>
+        <div class="kotak kotak7">
+            <center>
+                <img src="images/wordpress.png" alt="" id="gambar7">
+                <p id="info7"><i>Click for more info</i></p>
+            </center>
+            <div class="down6">
+            <p>Master Wordpress Quickly</p>
+            <p style="color:royalblue">Rp 100.000</p>
+            <br><br>
+            <hr>
+            <p>Berlangganan</p>
+            </div>
+        </div>
+        <div class="kotak kotak8">
+            <center>
+                <img src="images/physics.png" alt="" id="gambar8">
+                <p id="info8"><i>Click for more info</i></p>
+            </center>
+            <div class="down7">
+            <p>React Masterclass</p>
+            <p style="color: royalblue;">Rp 150.000</p>
+            <br><br><br>
+            <hr>
+            <p>Berlangganan</p>
+            </div>
+        </div>
+        <div class="kotak kotak9">
+            <center>
+                <img src="images/ruby.png" alt="" id="gambar9">
+                <p id="info9"><i>Click for more info</i></p>
+            </center>
+            <div class="down8">
+            <p>Ruby Object Oriented Programming</p>
+            <p style="color: royalblue;">Rp 50.000</p>
+            <br>
+            <hr>
+            <p>Berlangganan</p>
+            </div>
+        </div>
+        <div class="kotak kotak10">
+            <center>
+                <img src="images/kotlin.png" alt="" id="gambar10">
+                <p id="info10"><i>Click for more info</i></p>
+            </center>
+            <div class="down9">
+            <p>Android Kotlin Class</p>
+            <p style="color: royalblue;">Rp 125.000</p>
+            <br><br><br>
+            <hr>
+            <p>Berlangganan</p>
+            </div>
+        </div>
+        <div class="kotak kotak11">
+            <center>
+                <img src="images/database.png" alt="" id="gambar11">
+                <p id="info11"><i>Click for more info</i></p>
+            </center>
+            <div class="down10">
+            <p>Database SQL</p>
+            <p style="color: royalblue;">Rp 0</p>
+            <br><br><br>
+            <hr>
+            <p>Gratis Akses</p>
+            </div>
+        </div>
+        <div class="kotak kotak12">
+            <center>
+                <img src="images/motherboard.png" alt="" id="gambar12">
+                <p id="info12"><i>Click for more info</i></p>
+            </center>
+            <div class="down11">
+            <p>Robotic Arduino</p>
+            <p style="color: royalblue;">Rp 0</p>
+            <br><br><br>
+            <hr>
+            <p>Gratis Akses</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    <!-- Section Kelas Diakhiri -->
+
+    <!-- Start Footer -->
+    <div class="Footer">
+        <div class="isi-footer">
+            <ul>
+                <li><div class="bantuan">Bantuan</div>
+                    <ul>
+                        <li><div class="sosmed">
+                            <a href="https://www.instagram.com/manueleric32/"><img src="images/instagram (1).png"></a>
+                            <a href="https://wa.me/6281226032240"><img src="images/whatsapp.png"></a>
+                            <a href="https://www.tiktok.com/@manueleric"><img src="images/tik-tok.png"></a>
+                            <a href="mailto:manueleric.saputra@gmail.com"><img src="images/gmail.png"></a>
+                        </div></li>
+                    </ul>
+                </li>
+        <li>
+            <ul>
+                <li><div class="copyright" style="text-align: justify;"><i>Website ini digunakan untuk belajar bahasa pemrograman beserta tutor dari mentor yang berpengalaman</i></div></li>
+            </ul>
+        </li>
+        <li><div class="partner">Partner</div>
+            <ul>
+                <li><div class="partner-img"><img src="images/myCodey (1).png"><p style="color:white;">© 2021, myCodey</p>
+                </div></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

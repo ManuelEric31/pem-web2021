@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diskusi Form</title>
+    <link rel="stylesheet" href="css/diskusi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/diskusi.js"></script>
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="fixed-header">
+        <div class="header">
+            <img id="logohead" src="images/myCodey (1).png" alt="Logo" height="50px" class="logo">
+                <nav>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="kelas.html">Kelas</a></li>
+                    <li><a href="diskusi.html">Diskusi</a></li>
+                    <li><a  href="review.html">Review</a></li>
+                    <li id="logoprofil">
+                        <a href="login.html" style="font-size:12px">
+                            <img src="images/profile.png" alt="">   
+                        </a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    <!-- Header Section Diakhiri -->
+    <!-- Awal Isi Diskusi -->
+        <section class="home">
+            <div class="background">
+                <p id="diskusisamping">DISKUSI</p>
+                <div class="topquestion">
+                    <h1>Top Question</h1>
+                    <hr>
+                    <p>Kategori Kelas : </p>
+                    <p>Pertanyaan : </p>
+                    <hr>
+                    <p>Kategori Kelas : </p>
+                    <p>Pertanyaan : </p>
+                    <hr>
+                    <p>Kategori Kelas : </p>
+                    <p>Pertanyaan : </p>
+
+                    <button id="ask">
+                        <p id="question">Ask a new Question</p>
+                    </button>
+                    <br>
+                </div>
+                <!-- Question Section -->
+                <section class="container-form" id="formulir">
+                    <div class="form-box">
+                        <div class="form-left"></div>
+                        <div class="form-right">
+                            <h3>Question Form</h3>
+                            <form action="thankyou.php" method="post" id="contact" name="formulir">
+                                <label for="Nama">Nama</label><br>
+                                <input type="text" name="Nama" id="namaLengkap" class="bidang-form" required><br>
+                                <label for="Email">Email</label><br>
+                                <input type="email" name="Email" id="email" class="bidang-form" placeholder="pengguna@email.com" required><br>
+                                <label for="Pengajuan">Kategori Kelas</label><br>
+                                <select name="Pengajuan" id="" required>
+                                    <option value="disable" hidden>-- PILIH KELAS --</option>
+                                    <option value="c++">Dasar Pemrograman C++</option>
+                                    <option value="java">Dasar Pemrograman Java</option>
+                                    <option value="android">Fullstack Android Developer</option>
+                                    <option value="JS">Fullstack Javascript Developer</option>
+                                    <option value="swift">Dasar Pemrograman Swift</option>
+                                    <option value="python">Dasar Pemrograman Python</option>
+                                    <option value="wordpress">Master Wordpress Quickly</option>
+                                    <option value="react">React Masterclass</option>
+                                    <option value="ruby">Ruby Object Oriented Programming</option>
+                                    <option value="kotlin">Android Kotlin Class</option>
+                                    <option value="sql">Database SQL</option>
+                                    <option value="arduino">Robotic Arduino</option>
+                                </select><br><br>
+                                <label for="Pertanyaan">Pertanyaan</label><br>
+                                <textarea style="resize:none;" name="Pesan" id="psn" cols="30" rows="5" class="bidang-form" placeholder="Pertanyaan..."></textarea>
+                                <input id="kirim" class="tombol-kirim" type="submit" value="Kirim" name="formulir">    
+                            </form>
+                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                            <script src="thankyou.js"></script>
+                            <div class="respon" id="response"></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Akhir Question -->
+                
+            </div>
+        </section>
+    <!-- Akhir isi Diskusi -->
+
+<!-- Start Footer -->
+    <div class="Footer">
+        <div class="isi-footer">
+            <ul>
+                <li><div class="bantuan">Bantuan</div>
+                    <ul>
+                        <li><div class="sosmed">
+                            <a href="https://www.instagram.com/manueleric32/"><img src="images/instagram (1).png"></a>
+                            <a href="https://wa.me/6281226032240"><img src="images/whatsapp.png"></a>
+                            <a href="https://www.tiktok.com/@manueleric"><img src="images/tik-tok.png"></a>
+                            <a href="mailto:manueleric.saputra@gmail.com"><img src="images/gmail.png"></a>
+                        </div></li>
+                    </ul>
+                </li>
+        <li>
+            <ul>
+                <li><div class="copyright" style="text-align: justify;"><i>Website ini digunakan untuk belajar bahasa pemrograman beserta tutor dari mentor yang berpengalaman</i></div></li>
+            </ul>
+        </li>
+        <li><div class="partner">Partner</div>
+            <ul>
+                <li><div class="partner-img"><img src="images/myCodey (1).png"><p style="color:white;">© 2021, myCodey</p>
+                </div></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+</div>
+<!-- End Footer -->
+</body>

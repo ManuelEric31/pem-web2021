@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Stoke';
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+
+}
+
+.header,
+.header-2 {
+    display: flex;
+    padding: 10px;
+    background-color: #000000;
+}
+
+.header-2 {
+    flex-direction: row-reverse;
+}
+
+
+.fixed-header {
+    z-index: 999;
+    position: absolute;
+    height: auto;
+    background-color: #fff;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 3px 8px #888888
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: start;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    padding: 0px 5px;
+}
+
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+#logoprofil img{
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 50vw
+}
+
+#logohead {
+    margin-top: 18px;
+    margin-left: 10px
+}
+
+#logoprofil a {
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5b5c5e;
+    padding: 10px;
+    font-size: 1.0em;
+    color: white;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: rgb(255, 195, 66);
+    font-weight: bold;
+    transition: 1s linear;
+
+}
+
+.link {
+    text-align: center;
+}
+
+.link img {
+    width: 50px;
+    padding: 20px;
+}
+
+.home .background {
+    color: rgba(0, 0, 0, 0.952);
+    min-height: 160px;
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg1.png');
+    padding-top: 50px;
+}
+
+.home .background .content {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 70px;
+    font-family: 'Sen';
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.grid-item {
+    background-color: transparent;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-icon {
+    background-color: transparent;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-icon img {
+    width: 18%;
+    padding: 0px 40px 0px 40px;
+    float: left;
+}
+
+.grid-item button {
+    padding: 20px 60px 20px 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-family: 'Sen';
+    cursor: pointer;
+    color: rgb(0, 204, 255);
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.26);
+}
+
+.grid-item button:hover {
+    background: lightslategrey
+}
+
+.btn:hover {
+    transition: .4s linear;
+}
+
+
+
+/* Footer */
+.bantuan {
+    color: white;
+    margin-left: 40px;
+    font-family: 'Sen';
+}
+
+.sosmed {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.sosmed img {
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.Footer {
+    width: 100%;
+    display: inline-block;
+    background-color: #000000;
+    margin-bottom: -10px;
+}
+
+.isi-footer {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.isi-footer ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    list-style: none;
+}
+
+.isi-footer ul li {
+    margin: 3px 0;
+    float: left;
+    width: 31.94%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.isi-footer ul li ul {
+    padding: 0;
+}
+
+.isi-footer ul li ul li {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    padding: 5px 0;
+    display: inline;
+}
+
+.copyright {
+    color: white;
+    font-family: 'Sen';
+}
+
+.partner {
+    color: white;
+    font-family: 'Sen';
+}
+
+.partner-img img {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.partner-img {
+    font-size: 15px;
+}
+/* Register CSS */
+.container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 460px;
+    height: auto;
+    background: #FFE49F;
+    border-radius: 20px;
+    font-family: 'Sen';
+}
+
+.label {
+    padding: 10px 130px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #130f40;
+
+}
+
+.login_form {
+    padding: 20px 40px;
+}
+
+.login_form .font {
+    font-size: 18px;
+    color: #130f40;
+    margin: 5px 0;
+}
+
+.login_form input {
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1 px solid silver;
+    border-radius: 20px;
+}
+
+.login_form .font2 {
+    margin-top: 30px;
+
+}
+
+.login_form button {
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #88FFC6;
+    border: 1px solid #3948AB;
+    transition: .4s linear;
+}
+
+.login_form button:hover {
+    background: #00eeff;
+}
+
